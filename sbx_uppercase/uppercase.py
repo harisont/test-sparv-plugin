@@ -11,3 +11,11 @@ def uppercase(
 ):
     """Convert to uppercase."""
     out.write([val.upper() for val in word.read()])
+
+@annotator("Convert every word to title case (first letter uppercase)")
+def titlecase(
+    word: Annotation = Annotation("<token:word>"),
+    out: Output = Output("<token>:sbx_uppercase.title"),
+):
+    """Convert to title case."""
+    out.write([val.title() for val in word.read()])

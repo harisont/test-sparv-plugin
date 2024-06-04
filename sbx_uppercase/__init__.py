@@ -8,4 +8,4 @@ from . import uppercase
 #     Config("uppercase.some_setting", "some_default_value", description="Description for this setting")
 # ]
 
-__description__ = "Example for a Sparv annotator that converts tokens to uppercase."
+__description__ = "Example for a Sparv annotator that converts tokens to upper- or title case."
